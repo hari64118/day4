@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Form</title>
+</head>
+<body>
+    <h1>Contact Information</h1>
+    
+    <form action="submit_form.php" method="post">
+            <fieldset>
+            
+        <tableborder="5px"style="border: 2px solid red;">
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr><br>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr><br>
+            <tr>
+                <td><label for="phone">Phone:</label></td>
+                <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required></td>
+            </tr>
+            <tr>
+                <td><label for="message">Message:</label></td>
+                <td><textarea id="message" name="message" rows="4" cols="50" required></textarea></td>
+            </tr>
+            <tr><center>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                    
+                </td></center>
+            </tr>
+        </table>
+            </fieldset>
+    </form>
+</body>
+</html>
